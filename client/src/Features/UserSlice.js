@@ -6,7 +6,7 @@ import axios from "axios";
 
 export const login = createAsyncThunk("users/login ", async (userData) => {
   try {
-    const response = await axios.post("http://127.0.0.1:3002/login", {
+    const response = await axios.post("https://octane-garage-website.onrender.com/login", {
       remail: userData.email,
       rpassword: userData.password,
     });
@@ -26,7 +26,7 @@ export const registerUser = createAsyncThunk(
   async (userData)=>{
       try{
           console.log(userData);
-              const response = await axios.post("http://127.0.0.1:3002/registerUser",{
+              const response = await axios.post("https://octane-garage-website.onrender.com/registerUser",{
                   firstname:userData.firstname,
                   lastname:userData.lastname,
                   email:userData.email,
