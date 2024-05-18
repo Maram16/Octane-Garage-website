@@ -1,0 +1,134 @@
+/* CustomNavbar.css */
+.custom-navbar {
+  background: linear-gradient(to right, #b9b3b3, #af0c0c); /* grey to red gradient */
+  border-radius: 50rem; /* pill shape */
+  overflow: hidden;
+  margin-top: 20px; /* space from the top */
+}
+
+.custom-navbar .navbar-nav .nav-item .nav-link {
+  color: #ffffff;  /* white text */
+  /*font-weight: bold;   makes text bold */
+  font-size: 1.1rem;  /* slightly larger text size */
+  display: flex;  /* ensures proper alignment of the icon and text */
+  align-items: center;  /* centers the icon and text vertically */
+}
+
+
+
+
+/* Additional styles as needed */
+.nav-link .fa-icon {
+  margin-right: 5px; /* Adds a small space between the icon and the text */
+}
+
+
+/* Home page design  */
+/* HomePage.css */
+/* ... Other styles ... */
+
+
+
+
+/* Header.css */
+.custom-navbar.navbar-transparent {
+  background-color: transparent !important; /* Ensures override of other styles */
+  transition: background-color 0.3s;
+}
+
+.custom-navbar.navbar-colored {
+  background-color: #fff !important; /* Ensures override of other styles */
+  transition: background-color 0.3s;
+}
+
+/* Other styles for your navbar */
+
+
+.error{
+  color: red;
+  font-size: small;
+}
+
+
+/* .form-row {
+  background-color: rgb(103, 128, 140);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+.form-row {
+  padding-top: 170px; /* Less padding on the top if needed */
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; /* Adjusted top margin */
+}
+
+
+.column {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(75, 73, 73);
+  height: auto;
+}
+
+.div-form {
+  border-style: solid;
+  border-width: thin;
+  font-size: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 10px;
+  width: 100%; /* Smaller width relative to its container */
+  max-width: 600px; /* Maximum width to not exceed this size */
+  height: auto; 
+  border-color: rgb(149, 125, 55);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center; /* Aligns children (the button) on the horizontal axis to the center */
+  margin-top: 20px;
+  color: #af0c0c; 
+
+}
+
+.smalltext {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  /* Centers the button horizontally */
+}
+
+/* contactUs css */
+
+.userImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+
+
