@@ -4,7 +4,7 @@ import axios from "axios";
 // Assuming your data fields are called prodid, prodname, prodprice, prodimage
 export const fetchPosts = createAsyncThunk("products/fetchPosts", async () => {
   try {
-    const response = await axios.get("http://localhost:3002/fetchPosts");
+    const response = await axios.get("https://octane-garage-website.onrender.com/fetchPosts");
     return response.data.products;
   } catch (error) {
     console.error("Error fetching posts:", error);
@@ -14,7 +14,7 @@ export const fetchPosts = createAsyncThunk("products/fetchPosts", async () => {
  
 export const delProduct = createAsyncThunk("products/delProduct", async (prodid) => {
   try {
-    await axios.delete(`http://localhost:3002/delProduct/${prodid}`);
+    await axios.delete(`https://octane-garage-website.onrender.com/${prodid}`);
     return prodid;
   } catch (error) {
     console.error("Error deleting product:", error);
@@ -24,7 +24,7 @@ export const delProduct = createAsyncThunk("products/delProduct", async (prodid)
  
 export const savePost = createAsyncThunk("posts/savePost", async (postData) => {
   try {
-    const response = await axios.post("http://localhost:3002/savePost", {
+    const response = await axios.post("https://octane-garage-website.onrender.com/savePost", {
       prodid: postData.prodid,
       prodname: postData.prodname,
       prodprice: postData.prodprice,
@@ -43,7 +43,7 @@ export const updateProduct = createAsyncThunk(
     try {
       console.log(postData);
       //const { prodname, prodprice } = postData;
-      const response = await axios.post("http://localhost:3002/updateProduct", {
+      const response = await axios.post("https://octane-garage-website.onrender.com/updateProduct", {
         prodname: postData.prodname,
         prodprice :postData.prodprice
       });
